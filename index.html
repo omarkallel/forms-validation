@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Formulaire</title>
+</head>
+<body>
+    
+    <form id="myForm">
+        <div class="champ">
+            <label class="form_col" >Nom :</label>
+            <input id="lastName" type="text" />
+            <span class="condition">Un nom entre 2 et 20 caractères</span>
+        </div>
+
+        <div class="champ">
+            <label class="form_col">Prénom :</label>
+            <input id="firstName" type="text" />
+            <span class="condition">Un prénom entre 2 et 20 caractères</span>
+        </div>
+
+        <div class="champ">
+            <label class="form_col">Email :</label>
+            <input id="e-mail" type="text" />
+            <span class="condition">Entrer une adresse e-mail valide</span>
+        </div>
+
+        <div class="champ">
+            <label class="form_col" for="pwd1">Mot de passe :</label>
+            <input id="pwd1" type="password" />
+            <label class="form_col" for="pwd2">Mot de passe (confirmation) :</label>
+            <input id="pwd2" type="password" />
+            <span class="condition">8 caractères au moins avec nombre, majuscule et caractére speciaux</span>
+        </div>
+
+        <div class="buttons">
+            <button type="button" onclick="checkConditions()">Submit</button>
+            <button type="button" onclick="reinit()">Réinitialiser le formulaire</button>
+        </div> 
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>

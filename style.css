@@ -1,0 +1,16 @@
+#myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.champ{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    
+}
